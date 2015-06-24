@@ -13,3 +13,7 @@ class Course(models.Model):
     _name = 'openacademy.course'  # Model name
     name = fields.Char(string='Title', required=True)  # FIeld reserved to identify name rec
     description = fields.Text(string='Description')
+    responsible_id = fields.Many2one('res.users', 
+                                     ondelete = 'set null', 
+                                     string = "Responsible",
+                                     index = True)
