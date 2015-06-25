@@ -5,7 +5,7 @@ from openerp import fields, models, api
 class Session(models.Model):
     _name = 'openacademy.session'
     name = fields.Char(required=True)
-    start_date = fields.Date()
+    start_date = fields.Datetime(default=fields.Datetime.now)   
     duration = fields.Float(digits=(6, 2), help = "Duration in days")
     seats = fields.Integer(string = "Number of seats")
     instructor_id = fields.Many2one('res.partner', string = "Instructor",
@@ -18,7 +18,7 @@ class Session(models.Model):
                                 required = True)
     attendee_ids = fields.Many2many('res.partner', string="Attendees")
     taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
-
+    active = fields.Boolean(default=True)
 
     @api.one
     @api.depends('seats', 'attendee_ids')
