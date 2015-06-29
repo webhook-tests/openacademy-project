@@ -85,13 +85,13 @@ msgstr "Confirmado"
 #: model:ir.actions.act_window,name:openacademy.contact_list_action
 #: model:ir.ui.menu,name:openacademy.contact_menu
 msgid "Contacts"
-msgstr "Contacts"
+msgstr "Contactos"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_tree_view
 #: field:openacademy.session,course_id:0
 msgid "Course"
-msgstr "Course"
+msgstr "Curso"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
@@ -102,14 +102,14 @@ msgstr "Course Form"
 #: model:ir.actions.act_window,name:openacademy.course_list_action
 #: model:ir.ui.menu,name:openacademy.course_menu
 msgid "Courses"
-msgstr "Courses"
+msgstr "Cursos"
 
 #. module: openacademy
 #: field:openacademy.course,create_uid:0
 #: field:openacademy.session,create_uid:0
 #: field:openacademy.wizard,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creado por"
 
 #. module: openacademy
 #: field:openacademy.course,create_date:0
@@ -121,7 +121,7 @@ msgstr "Created on"
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_kanban_view
 msgid "Delete"
-msgstr "Delete"
+msgstr "Eliminar"
 
 #. module: openacademy
 #: field:openacademy.course,description:0
@@ -131,17 +131,17 @@ msgstr "Description"
 #. module: openacademy
 #: selection:openacademy.session,state:0
 msgid "Done"
-msgstr "Done"
+msgstr "Hecho"
 
 #. module: openacademy
 #: selection:openacademy.session,state:0
 msgid "Draft"
-msgstr "Draft"
+msgstr "Borrador"
 
 #. module: openacademy
 #: field:openacademy.session,duration:0
 msgid "Duration"
-msgstr "Duration"
+msgstr "Duracion"
 
 #. module: openacademy
 #: help:openacademy.session,duration:0
@@ -161,7 +161,7 @@ msgstr "General"
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_search_view
 msgid "Group By"
-msgstr "Group By"
+msgstr "Agrupar por"
 
 #. module: openacademy
 #: field:openacademy.course,id:0
@@ -193,7 +193,7 @@ msgstr "Last Updated on"
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_form_view
 msgid "Mark as done"
-msgstr "Mark as done"
+msgstr "Marcar como hecho"
 
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_search_view
