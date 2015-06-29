@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from datetime import datetime, timedelta
-from openerp import fields, models, api, exceptions
+from openerp import fields, models, api, exceptions, _
 
 
 class Session(models.Model):
@@ -47,7 +47,7 @@ class Session(models.Model):
         if self.seats < 0:
             return {
                 'warning': {
-                    'title': "Incorrect 'seats' value",
+                    'title': _( "Incorrect 'seats' value"),
                     'message': "The number of available seats may not be negative",
                 },
             }
