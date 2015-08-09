@@ -1,23 +1,23 @@
 from openerp import models, fields, api, _
 
-'''
-This is a practice module and should be ignored
-'''
 
 class Course(models.Model):
 
     '''
-    This class is  for me
+    class for the openacademy course model
     '''
-    
+
     _name = 'openacademy.course'  # Model name
-    name = fields.Char(string='Title', required=True)  # FIeld reserved to identify name rec
-    description = fields.Text(string='Description')
-    responsible_id = fields.Many2one('res.users', 
-                                     ondelete = 'set null', 
+    # Field reserved to identify name rec
+    name = fields.Char(string='Title', required=True)
+    description = fields.Text(string = 'Description')
+    responsible_id = fields.Many2one('res.users',
+                                     ondelete = 'set null',
                                      string = "Responsible",
                                      index = True)
-    session_ids = fields.One2many('openacademy.session', 'course_id', string="Sessions")
+    session_ids = fields.One2many('openacademy.session', 
+                                  'course_id', 
+                                  string="Sessions")
 
     _sql_constraints = [
         ('name_description_check',
@@ -29,6 +29,7 @@ class Course(models.Model):
          "The course title must be unique"),
     ]
 
+
     @api.one # api.ode send default params: cr, uid, id context
     def copy(self, default=None):
         if default is None:
@@ -39,6 +40,5 @@ class Course(models.Model):
         if not copied_count:
             new_name = _(u"Copy of {}%").format(self.name)
         else:
-            new_name =_(u"Copy of {}%").format(self.name, copied_count)
+            new_name = _(u"Copy of {}%").format(self.name, copied_count)
         return super(Course, self).copy(default)
-        
