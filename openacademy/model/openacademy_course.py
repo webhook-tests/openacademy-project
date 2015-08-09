@@ -10,13 +10,13 @@ class Course(models.Model):
     _name = 'openacademy.course'  # Model name
     # Field reserved to identify name rec
     name = fields.Char(string='Title', required=True)
-    description = fields.Text(string = 'Description')
+    description = fields.Text(string='Description')
     responsible_id = fields.Many2one('res.users',
-                                     ondelete = 'set null',
-                                     string = "Responsible",
-                                     index = True)
-    session_ids = fields.One2many('openacademy.session', 
-                                  'course_id', 
+                                     ondelete='set null',
+                                     string="Responsible",
+                                     index=True)
+    session_ids = fields.One2many('openacademy.session',
+                                  'course_id',
                                   string="Sessions")
 
     _sql_constraints = [
@@ -29,8 +29,7 @@ class Course(models.Model):
          "The course title must be unique"),
     ]
 
-
-    @api.one # api.ode send default params: cr, uid, id context
+    @api.one  # api.ode send default params: cr, uid, id context
     def copy(self, default=None):
         if default is None:
             default = {}
@@ -38,7 +37,7 @@ class Course(models.Model):
         copied_count = self.search_count(
             [('name', '=like', u"Copy of {}%".format(self.name))])
         if not copied_count:
-            new_name = _(u"Copy of {}%").format(self.name)
+            name = _(u"Copy of {}%").format(self.name)
         else:
-            new_name = _(u"Copy of {}%").format(self.name, copied_count)
+            name = _(u"Copy of {}%").format(self.name, copied_count)
         return super(Course, self).copy(default)

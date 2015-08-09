@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from datetime import datetime, timedelta
+from datetime import timedelta
 from openerp import fields, models, api, exceptions, _
 
 
@@ -12,7 +12,7 @@ class Session(models.Model):
     seats = fields.Integer(string="Number of seats")
     instructor_id = fields.Many2one('res.partner', string="Instructor",
                                     domain=["|",
-                                            ("instructor","=",True),
+                                            ("instructor", "=", True),
                                             ("category_id.name",
                                              "ilike", "%Teacher%")])
     course_id = fields.Many2one('openacademy.course',
@@ -58,7 +58,7 @@ class Session(models.Model):
                     'title': "Too many attendees",
                     'message': "Increase seats or remove excess attendees",
                     },
-             }
+                }
 
     @api.one
     @api.constrains('instructor_id', 'attendee_ids')

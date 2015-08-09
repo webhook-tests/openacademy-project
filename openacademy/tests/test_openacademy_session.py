@@ -51,9 +51,9 @@ class GlobalTestOpenAcademySession(TransactionCase):
                                              'Initial state should be "draft"')
         # Change next state and check it
         session_test.signal_workflow('button_confirm')
-        self.assertEqual(session_test.state, 'confirmed', 
+        self.assertEqual(session_test.state, 'confirmed',
                                              'Signal confirm not working')
         # Change next state and check it
         session_test.signal_workflow('button_done')
-        self.assertEqual(session_test.state, 'done', 
+        self.assertEqual(session_test.state, 'done',
                                              'Signal done not working')
