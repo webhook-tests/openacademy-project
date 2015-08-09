@@ -31,6 +31,8 @@ class Course(models.Model):
 
     @api.one # api.ode send default params: cr, uid, id context
     def copy(self, default=None):
+        if default is None:
+            default = {}
         default['name'] = self.name + ' (copy)'
         copied_count = self.search_count(
             [('name', '=like', u"Copy of {}%".format(self.name))])
