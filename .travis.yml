@@ -13,6 +13,6 @@ install:
   - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly
-
+  - sudo apt-get install python-dev libxml2 libxml2-dev libxslt-dev
 script:
   - travis_run_tests
