@@ -9,11 +9,10 @@ class Wizard(models.TransientModel):
 
     def _default_session(self):
         return self.env['openacademy.session'].browse(self._context.get(
-                                                               'active'
-                                                               '_ids'))
+        'active_ids'))
     session_wiz_ids = fields.Many2many('openacademy.session',
                                        string="Sessions",
-                                       required=True, 
+                                       required=True,
                                        default=_default_session)
     attendee_wiz_ids = fields.Many2many('res.partner', string="Attendees")
 

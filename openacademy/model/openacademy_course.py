@@ -29,15 +29,15 @@ class Course(models.Model):
          "The course title must be unique"),
     ]
 
-    @api.one  # api.ode send default params: cr, uid, id context
+    @api.one  # api.one send default params: cr, uid, id context
     def copy(self, default=None):
         if default is None:
             default = {}
-        default['name'] = self.name + ' (copy)'
         copied_count = self.search_count(
-            [('name', '=like', u"Copy of {}%".format(self.name))])
+            [('name', '=like', "{} (copy%)".format(self.name))])
         if not copied_count:
-            name = _(u"Copy of {}%").format(self.name)
+            new_name = ("{} (copy)").format(self.name)
         else:
-            name = _(u"Copy of {}%").format(self.name, copied_count)
+            new_name = ("{} (copy {})").format(self.name, copied_count)
+        default['name'] = new_name
         return super(Course, self).copy(default)
