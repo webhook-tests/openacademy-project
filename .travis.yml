@@ -3,6 +3,18 @@ language: python
 python:
       - "2.7"
 
+addons:
+  apt:
+# only add the two lines below if you need wkhtmltopdf for your tests
+#    sources:
+#      - pov-wkhtmltopdf
+    packages:
+      - expect-dev  # provides unbuffer utility
+      - python-lxml  # because pip installation is slow
+      - python-simplejson
+      - python-serial
+      - python-yaml
+
 env:
   - VERSION="8.0" ODOO_REPO="odoo/odoo" UNIT_TEST="1"
 
@@ -13,7 +25,6 @@ install:
   - git clone --depth=1 https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
   - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
   - travis_install_nightly
-  - python-lxml
 
 script:
   - travis_run_tests
