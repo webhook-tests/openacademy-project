@@ -1,2 +1,1 @@
-addons-vauxoo git@github.com:Vauxoo/addons-vauxoo.git
-purchase git@github.com:Vauxoo/purchase.git
+server_tools git@github.com:Vauxoo/server_tools.git
