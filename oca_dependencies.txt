@@ -1,1 +1,1 @@
-server_tools git@github.com:Vauxoo/server_tools.git
+instance git@github.com:Vauxoo/instance.git
