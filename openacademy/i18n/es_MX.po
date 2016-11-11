@@ -20,7 +20,7 @@ msgstr ""
 msgid "<p class=\"oe_view_nocontent_create\">Create the first course\n"
 "                </p>\n"
 "            "
-msgstr "<p class=\"oe_view_nocontent_create\">Crea el primer curso\n"
+msgstr "<p class=\"oe_view_nocontent_create\">Crea el primer curso por favor\n"
 "                </p>\n"
 "            "
 
@@ -102,14 +102,14 @@ msgstr "Course Form"
 #: model:ir.actions.act_window,name:openacademy.course_list_action
 #: model:ir.ui.menu,name:openacademy.course_menu
 msgid "Courses"
-msgstr "Courses"
+msgstr "Cursos"
 
 #. module: openacademy
 #: field:openacademy.course,create_uid:0
 #: field:openacademy.session,create_uid:0
 #: field:openacademy.wizard,create_uid:0
 msgid "Created by"
-msgstr "Created by"
+msgstr "Creado por"
 
 #. module: openacademy
 #: field:openacademy.course,create_date:0
@@ -261,11 +261,6 @@ msgstr "Responsible"
 #: view:openacademy.session:openacademy.session_form_view
 msgid "Schedule"
 msgstr "Schedule"
-
-#. module: openacademy
-#: field:res.partner,session_ids:0
-msgid "Sesion como instructor"
-msgstr "Sesion como instructor"
 
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_calendar_view
