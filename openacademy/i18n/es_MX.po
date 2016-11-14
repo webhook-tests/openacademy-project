@@ -207,6 +207,11 @@ msgid "My_Courses"
 msgstr "My_Courses"
 
 #. module: openacademy
+#: view:openacademy.session:openacademy.session_form_view
+msgid "TESTEANDO"
+msgstr "Test"
+
+#. module: openacademy
 #: field:openacademy.session,name:0
 msgid "Name"
 msgstr "Name"
