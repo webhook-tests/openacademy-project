@@ -1,1 +1,1 @@
-instance git@github.com:Vauxoo/instance.git 800.231
+instance git@github.com:Vauxoo/instanweqwce.git
