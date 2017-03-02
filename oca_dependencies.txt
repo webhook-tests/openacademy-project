@@ -1,1 +1,1 @@
-instance git@github.com:Vauxoo/instanweqwce.git
+instance git@github.com:Vauxoo/forecast.git
