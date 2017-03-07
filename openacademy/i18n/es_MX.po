@@ -27,7 +27,7 @@ msgstr "<p class=\"oe_view_nocontent_create\">Crea el primer curso por favor\n"
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
 msgid "About"
-msgstr "About"
+msgstr "Acerca"
 
 #. module: openacademy
 #: field:openacademy.session,active:0
@@ -44,6 +44,11 @@ msgstr "Agregar asistentes"
 #: model:ir.ui.menu,name:openacademy.menu_launch_session_wizard
 msgid "Add attendees massive"
 msgstr "Add attendees massive"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.menu_launch_session_wizard
+msgid "Add attendees massive2"
+msgstr "Add attendees massivos"
 
 #. module: openacademy
 #: field:openacademy.session,attendee_ids:0
