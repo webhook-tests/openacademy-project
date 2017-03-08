@@ -649,26 +649,19 @@ msgstr "\n"
 "        "
 
 #. module: base
-#: model:ir.module.module,description:base.module_hr_maintenance
-msgid "\n"
-"        Bridge between HR and Maintenance."
-msgstr "\n"
-"Enlace entre los módulos HR y Maintenance"
-
-#. module: base
 #: model:ir.module.module,description:base.module_pos_data_drinks
 msgid "\n"
 "        Common drinks data for points of sale\n"
 "    "
 msgstr "\n"
-"Lista de bebidas más comunes en los terminales de punto de venta"
+"Lista de bebidas más comunes en los terminales de puntos de venta"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_cache
 msgid "\n"
 "        Enable a cache on products for a lower POS loading time."
 msgstr "\n"
-"        Habilita un cache en productos para un menor tiempo de carga en POS."
+"        Habilita un cache en productos para un tiempo de carga reducido en POS."
 
 #. module: base
 #: model:ir.module.module,description:base.module_openacademy
