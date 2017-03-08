@@ -101,7 +101,7 @@ msgstr "\n"
 "\n"
 "=======================\n"
 "\n"
-"Este módulo permite al cajero dar rápidamente un descuento\n"
+"Este módulo permite al cajero entregar rápidamente un descuento\n"
 "de venta al cliente.\n"
 "\n"
 ""
@@ -647,13 +647,6 @@ msgstr "\n"
 "\n"
 "        \"Código en Python\" define el monto del impuesto.\n"
 "        "
-
-#. module: base
-#: model:ir.module.module,summary:base.module_account_tax_python
-msgid "\n"
-"        Allows to use python code to define taxes"
-msgstr "\n"
-"Permite utilizar código python para definir impuestos"
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_maintenance
