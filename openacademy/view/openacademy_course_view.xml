@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
     <data>
-        <record model ="ir.ui.view" id ="course_form_view">
+        <record model ="ir.ui.view" id ="course_form_view2">
             <field name = "name">course.form.view</field>
             <field name = "model">openacademy.course</field>
             <field name = "arch" type = "xml">
@@ -28,7 +28,7 @@
                             </page>
                          </notebook>
                     </sheet>
-                </form>                     
+                </form>
             </field>
         </record>
 
@@ -52,10 +52,6 @@
                     <field name="description"/>
                     <filter name="my_courses" string="My_Courses"
                         domain="[('responsible_id', '=', uid)]"/>
-                    <group string="Group By">
-                        <filter name="by_responsible" string="Rensponsible"
-                                context="{'group_by': 'responsible_id'}"/>
-                    </group>
                 </search>
             </field>
         </record>
@@ -74,7 +70,7 @@
 
         <!-- top level menu: no parent -->
         <menuitem id="main_openacademy_menu" name="Open Academy"/>
-        <!-- A first level in the left side menu is needed 
+        <!-- A first level in the left side menu is needed
              before using action= attribute -->
         <menuitem id="openacademy_menu" name="Open Academy"
                   parent="main_openacademy_menu"/>
