@@ -8,7 +8,7 @@
                 <form string = "Course Form">
                     <sheet>
                         <group>
-                            <field name = "name"/>
+                            <field name = "course_name"/>
                         </group>
                         <notebook>
                             <page string="description">
@@ -20,7 +20,7 @@
                             <page string="Sessions">
                                 <field name="session_ids">
                                     <tree string="Registered sessions">
-                                        <field name="name"/>
+                                        <field name="course_name"/>
                                         <field name="instructor_id"/>
                                     </tree>
                                 </field>
@@ -32,11 +32,11 @@
         </record>
 
         <record model = "ir.ui.view" id = "course_tree">
-            <field name = "name">course.tree.view</field>
+            <field name = "course_name">course.tree.view</field>
             <field name = "model">openacademy.course</field>
             <field name = "arch" type = "xml">
                 <tree string="Course">
-                    <field name="name"/>
+                    <field name="course_name"/>
                     <field name="responsible_id"/>
                 </tree>
             </field>
@@ -47,7 +47,7 @@
             <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="name"/>
+                    <field name="course_name"/>
                     <field name="description"/>
                     <filter name="my_courses" string="My_Courses"
                         domain="[('responsible_id', '=', uid)]"/>
