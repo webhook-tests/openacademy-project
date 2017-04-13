@@ -9,7 +9,6 @@
                     <sheet>
                         <group>
                             <field name = "name"/>
-                            <field name = "responsible_id"/>
                         </group>
                         <notebook>
                             <page string="description">
@@ -32,7 +31,7 @@
             </field>
         </record>
 
-        <record model = "ir.ui.view" id = "course_tree_view">
+        <record model = "ir.ui.view" id = "course_tree">
             <field name = "name">course.tree.view</field>
             <field name = "model">openacademy.course</field>
             <field name = "arch" type = "xml">
