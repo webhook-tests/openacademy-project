@@ -17,7 +17,6 @@
                             <page string="Sessions">
                                 <field name="session_ids">
                                     <tree string="Registered sessions">
-                                        <field name="course_name"/>
                                         <field name="instructor_id"/>
                                     </tree>
                                 </field>
@@ -33,7 +32,6 @@
             <field name = "model">openacademy.course</field>
             <field name = "arch" type = "xml">
                 <tree string="Course">
-                    <field name="course_name"/>
                     <field name="responsible_id"/>
                 </tree>
             </field>
@@ -44,7 +42,6 @@
             <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="course_name"/>
                     <field name="description"/>
                     <filter name="my_courses" string="My_Courses"
                         domain="[('responsible_id', '=', uid)]"/>
