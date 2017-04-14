@@ -7,9 +7,6 @@
             <field name = "arch" type = "xml">
                 <form string = "Course Form">
                     <sheet>
-                        <group>
-                            <field name = "course_name"/>
-                        </group>
                         <notebook>
                             <page string="description">
                                 <field name="description"/>
@@ -32,7 +29,7 @@
         </record>
 
         <record model = "ir.ui.view" id = "course_tree">
-            <field name = "course_name">course.tree.view</field>
+            <field name = "name">course.tree.view</field>
             <field name = "model">openacademy.course</field>
             <field name = "arch" type = "xml">
                 <tree string="Course">
