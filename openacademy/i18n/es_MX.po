@@ -27,12 +27,12 @@ msgstr "<p class=\"oe_view_nocontent_create\">Crea el primer curso por favor\n"
 #. module: openacademy
 #: view:openacademy.course:openacademy.course_form_view
 msgid "About"
-msgstr "About"
+msgstr "Acerca de"
 
 #. module: openacademy
 #: field:openacademy.session,active:0
 msgid "Active"
-msgstr "Activo"
+msgstr "Activa"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.launch_session_wizard
@@ -44,6 +44,11 @@ msgstr "Agregar asistentes"
 #: model:ir.ui.menu,name:openacademy.menu_launch_session_wizard
 msgid "Add attendees massive"
 msgstr "Add attendees massive"
+
+#. module: openacademy
+#: model:ir.ui.menu,name:openacademy.menu_launch_session_wizard
+msgid "Add attendees massive2"
+msgstr "Add attendees massivos"
 
 #. module: openacademy
 #: field:openacademy.session,attendee_ids:0
@@ -64,12 +69,7 @@ msgstr "Cancelar"
 #. module: openacademy
 #: field:openacademy.session,color:0
 msgid "Color"
-msgstr "Color"
-
-#. module: openacademy
-#: model:ir.ui.menu,name:openacademy.configuration_menu
-msgid "Configuration"
-msgstr "Configuración"
+msgstr "Colour"
 
 #. module: openacademy
 #: view:openacademy.session:openacademy.session_form_view
@@ -88,7 +88,7 @@ msgid "Contacts"
 msgstr "Contacts"
 
 #. module: openacademy
-#: view:openacademy.course:openacademy.course_tree_view
+#: view:openacademy.course:openacademy.course_tree
 #: field:openacademy.session,course_id:0
 msgid "Course"
 msgstr "Course"
