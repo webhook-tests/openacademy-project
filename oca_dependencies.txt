@@ -1,1 +1,1 @@
-instance git@github.com:Vauxoo/instance.git
+abastotal git@github.com:Vauxoo/abastotal.git
