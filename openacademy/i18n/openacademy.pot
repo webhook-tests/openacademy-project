@@ -86,7 +86,7 @@ msgid "Contacts"
 msgstr ""
 
 #. module: openacademy
-#: view:openacademy.course:openacademy.course_tree_view
+#: view:openacademy.course:openacademy.course_tree
 #: field:openacademy.session,course_id:0
 msgid "Course"
 msgstr ""

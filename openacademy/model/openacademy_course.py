@@ -9,8 +9,8 @@ class Course(models.Model):
 
     _name = 'openacademy.course'  # Model name
     # Field reserved to identify name rec
-    name = fields.Char(string='Title', required=True)
-    description = fields.Text(string='Description')
+    course_name = fields.Char(string='Title', required=True)
+    description = fields.Char(string='Description')
     responsible_id = fields.Many2one('res.users',
                                      ondelete='set null',
                                      string="Responsible",
@@ -21,11 +21,11 @@ class Course(models.Model):
 
     _sql_constraints = [
         ('name_description_check',
-         'CHECK(name != description)',
+         'CHECK(course_name != description)',
          "The title of the course should not be the description"),
 
         ('name_unique',
-         'UNIQUE(name)',
+         'UNIQUE(course_name)',
          "The course title must be unique"),
     ]
 
@@ -34,10 +34,10 @@ class Course(models.Model):
         if default is None:
             default = {}
         copied_count = self.search_count(
-            [('name', '=like', "{} (copy%)".format(self.name))])
+            [('course_name', '=like', "{} (copy%)".format(self.course_name))])
         if not copied_count:
-            new_name = ("{} (copy)").format(self.name)
+            new_name = ("{} (copy)").format(self.course_name)
         else:
-            new_name = ("{} (copy {})").format(self.name, copied_count)
-        default['name'] = new_name
+            new_name = ("{} (copy {})").format(self.course_name, copied_count)
+        default['course_name'] = new_name
         return super(Course, self).copy(default)

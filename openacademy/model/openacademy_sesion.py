@@ -7,6 +7,7 @@ from openerp import fields, models, api, exceptions, _
 class Session(models.Model):
     _name = 'openacademy.session'
     name = fields.Char(required=True)
+    test_field = fields.Char('TESTEANDO')
     start_date = fields.Datetime(default=fields.Datetime.now)
     duration = fields.Float(digits=(6, 2), help = "Duration in days")
     seats = fields.Integer(string="Number of seats")

@@ -32,18 +32,13 @@ msgstr "About"
 #. module: openacademy
 #: field:openacademy.session,active:0
 msgid "Active"
-msgstr "Activo"
+msgstr "Activa"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.launch_session_wizard
 #: view:openacademy.wizard:openacademy.wizard_form_view
 msgid "Add attendees"
 msgstr "Agregar asistentes"
-
-#. module: openacademy
-#: model:ir.ui.menu,name:openacademy.menu_launch_session_wizard
-msgid "Add attendees massive"
-msgstr "Add attendees massive"
 
 #. module: openacademy
 #: field:openacademy.session,attendee_ids:0
@@ -88,7 +83,7 @@ msgid "Contacts"
 msgstr "Contactos"
 
 #. module: openacademy
-#: view:openacademy.course:openacademy.course_tree_view
+#: view:openacademy.course:openacademy.course_tree
 #: field:openacademy.session,course_id:0
 msgid "Course"
 msgstr "Curso"
