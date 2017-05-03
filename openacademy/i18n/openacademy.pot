@@ -65,7 +65,7 @@ msgid "Color"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.ui.menu,name:openacademy.configuration_menu
+#: model:ir.ui.menu,name:openacademy.configuration_menu_new
 msgid "Configuration"
 msgstr ""
 
