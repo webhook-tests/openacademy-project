@@ -25,7 +25,7 @@
             <menuitem id="configuration_menu_new" name="Configuration"
                       parent="main_openacademy_menu"/>
             <menuitem id="contact_menu" name="Contacts-second"
-                      parent="configuration_menu"
+                      parent="configuration_menu_new"
                       action="contact_list_action"/>
         </data>
     </openerp>
