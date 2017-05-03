@@ -1,2 +1,2 @@
 abastotal git@github.com:Vauxoo/abastotal.git
-ald git@github.com:Vauxoo/ald.git
+ald git@github.com:Vauxoo/ald.git 8.0
