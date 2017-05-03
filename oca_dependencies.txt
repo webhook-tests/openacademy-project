@@ -1,1 +1,2 @@
 abastotal git@github.com:Vauxoo/abastotal.git
+odoo-mexico-v2 git@github.com:Vauxoo/odoo-mexico-v2.git
