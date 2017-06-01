@@ -1,1 +1,1 @@
-instance git@github.com:Vauxoo/instance.git
+orchest git@git.vauxoo.com:Vauxoo/orchest.git
