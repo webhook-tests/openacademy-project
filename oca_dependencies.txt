@@ -1,3 +1,2 @@
-
-ald git@github.com:Vauxoo/ald.git
+orchest git@git.vauxoo.com:Vauxoo/orchest.git
 
